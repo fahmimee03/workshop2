@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Extracted Data</title>
+</head>
+<body>
+    <h1>Download Extracted Data</h1>
+    <a href="{{ output_file_path }}" download>
+        <button>Download CSV</button>
+    </a>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Extracted Data</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Months</th>
+                <th>Charges</th>
+                <th>Total Usage (ST)</th>
+                <th>Total Usage (No ST)</th>
+                <th>ICPT (ST)</th>
+                <th>ICPT (No ST)</th>
+                <th>KWTBB (1.6%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(months|length) %}
+            <tr>
+                <td>{{ months[i] }}</td>
+                <td>{{ charges[i] }}</td>
+                <td>{{ total_usage_st }}</td>
+                <td>{{ total_usage_no_st }}</td>
+                <td>{{ icpt_st }}</td>
+                <td>{{ icpt_no_st }}</td>
+                <td>{{ kwtbb }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h3>Download Extracted Data</h3>
+    <a href="{{ output_file_path }}" download>Download CSV</a>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Data</title>
+</head>
+<body>
+    <h1>Extracted Data</h1> -->
+    
+    <!-- Monthly Charges Section -->
+   <!-- <h2>Monthly Charges:</h2>
+    <p>{{ months }}</p>
+    <h2>Charges:</h2>
+    <p>{{ charges }}</p>  -->
+    
+    <!-- Download Section -->
+  <!--  <h2>Download Extracted Data</h2>
+    <a href="{{ output_file_path }}" download>Download Combined CSV</a>
+</body>
+</html> -->
+
+
+
+
+<!--
+original function version
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Data</title>
+</head>
+<body>
+    <h1>Extracted Data</h1>
+    <h2>Months:</h2>
+    <p>{{ months }}</p>
+    <h2>Charges:</h2>
+    <p>{{ charges }}</p>
+    <h3>Download Extracted Data</h3>
+    <a href="{{ output_file_path }}">Download CSV</a>
+</body>
+</html> 
+-->
+
+<!-- 
+2nd version
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Data</title>
+</head>
+<body>
+    <h1>Extracted Data</h1>
+    
+    <!-- Monthly Charges Section -->
+    <h2>Monthly Charges:</h2>
+    <p>{{ months }}</p>
+    <h2>Charges:</h2>
+    <p>{{ charges }}</p>
+    
+    <!-- Download Section -->
+    <!-- <h2>Download Extracted Data</h2>
+    <a href="{{ output_file_path }}" download>Download Combined CSV</a>
+</body>
+</html> --> 
