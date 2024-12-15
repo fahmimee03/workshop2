@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en" data-bs-theme="blue-theme">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maxton | Bootstrap 5 Admin Dashboard Template</title>
+  <!--favicon-->
+  <link rel="icon" href="/static/assets/images/favicon-32x32.png" type="image/png">
+  <!-- loader-->
+	<link href="/static/assets/css/pace.min.css" rel="stylesheet">
+	<script src="/static/assets/js/pace.min.js"></script>
+
+  <!--plugins-->
+  <link href="/static/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/static/assets/plugins/metismenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/plugins/metismenu/mm-vertical.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/plugins/simplebar/css/simplebar.css">
+  <!--bootstrap css-->
+  <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <!--main css-->
+  <link href="/static/assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="/static/sass/main.css" rel="stylesheet">
+  <link href="/static/sass/dark-theme.css" rel="stylesheet">
+  <link href="/static/sass/blue-theme.css" rel="stylesheet">
+  <link href="/static/sass/semi-dark.css" rel="stylesheet">
+  <link href="/static/sass/bordered-theme.css" rel="stylesheet">
+  <link href="/static/sass/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--start header-->
+  <header class="top-header">
+    <nav class="navbar navbar-expand align-items-center gap-4">
+      <div class="btn-toggle">
+        <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+      </div>
+      <div class="search-bar flex-grow-1">
+        <div class="position-relative">
+          <input class="form-control rounded-5 px-5 search-control d-lg-block d-none" type="text" placeholder="Search">
+          <span class="material-icons-outlined position-absolute d-lg-block d-none ms-3 translate-middle-y start-0 top-50">search</span>
+          <span class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 search-close">close</span>
+          <div class="search-popup p-3">
+            <div class="card rounded-4 overflow-hidden">
+              <div class="card-header d-lg-none">
+                <div class="position-relative">
+                  <input class="form-control rounded-5 px-5 mobile-search-control" type="text" placeholder="Search">
+                  <span class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
+                  <span class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 mobile-search-close">close</span>
+                 </div>
+              </div>
+              <div class="card-body search-content">
+                <p class="search-title">Recent Searches</p>
+                <div class="d-flex align-items-start flex-wrap gap-2 kewords-wrapper">
+                  <a href="javascript:;" class="kewords"><span>Angular Template</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Dashboard</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Admin Template</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Bootstrap 5 Admin</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Html eCommerce</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Sass</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>laravel 9</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                </div>
+                <hr>
+                <p class="search-title">Tutorials</p>
+                <div class="search-list d-flex flex-column gap-2">
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="list-icon">
+                      <i class="material-icons-outlined fs-5">play_circle</i>
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title ">Wordpress Tutorials</h5>
+                    </div>
+                  </div>
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="list-icon">
+                      <i class="material-icons-outlined fs-5">shopping_basket</i>
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title">eCommerce Website Tutorials</h5>
+                    </div>
+                  </div>
+  
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="list-icon">
+                      <i class="material-icons-outlined fs-5">laptop</i>
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title">Responsive Design</h5>
+                    </div>
+                  </div>
+                </div>
+  
+                <hr>
+                <p class="search-title">Members</p>
+  
+                <div class="search-list d-flex flex-column gap-2">
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="memmber-img">
+                      <img src="/static/assets/images/avatars/01.png" width="32" height="32" class="rounded-circle" alt="">
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title ">Andrew Stark</h5>
+                    </div>
+                  </div>
+  
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="memmber-img">
+                      <img src="/static/assets/images/avatars/02.png" width="32" height="32" class="rounded-circle" alt="">
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title ">{{username}}</h5>
+                    </div>
+                  </div>
+  
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="memmber-img">
+                      <img src="/static/assets/images/avatars/03.png" width="32" height="32" class="rounded-circle" alt="">
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title">Michle Clark</h5>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+              <div class="card-footer text-center bg-transparent">
+                <a href="javascript:;" class="btn w-100">See All Search Results</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav gap-1 nav-right-links align-items-center">
+        <li class="nav-item d-lg-none mobile-search-btn">
+          <a class="nav-link" href="javascript:;"><i class="material-icons-outlined">search</i></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;" data-bs-toggle="dropdown"><img src="/static/assets/images/county/02.png" width="22" alt="">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="/static/assets/images/county/01.png" width="20" alt=""><span class="ms-2">English</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="/static/assets/images/county/02.png" width="20" alt=""><span class="ms-2">Catalan</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="/static/assets/images/county/03.png" width="20" alt=""><span class="ms-2">French</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="/static/assets/images/county/04.png" width="20" alt=""><span class="ms-2">Belize</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="/static/assets/images/county/05.png" width="20" alt=""><span class="ms-2">Colombia</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="/static/assets/images/county/06.png" width="20" alt=""><span class="ms-2">Spanish</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="/static/assets/images/county/07.png" width="20" alt=""><span class="ms-2">Georgian</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="/static/assets/images/county/08.png" width="20" alt=""><span class="ms-2">Hindi</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="javascrpt:;" class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+             <img src="/static/assets/images/avatars/01.png" class="rounded-circle p-1 border" width="45" height="45" alt="">
+          </a>
+          <div class="dropdown-menu dropdown-user dropdown-menu-end shadow">
+            <a class="dropdown-item  gap-2 py-2" href="javascript:;">
+              <div class="text-center">
+                <img src="/static/assets/images/avatars/01.png" class="rounded-circle p-1 shadow mb-3" width="90" height="90"
+                  alt="">
+                <h5 class="user-name mb-0 fw-bold">Hello, {{username}}</h5>
+              </div>
+            </a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+              class="material-icons-outlined">person_outline</i>Profile</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+              class="material-icons-outlined">local_bar</i>Setting</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+              class="material-icons-outlined">dashboard</i>Dashboard</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+              class="material-icons-outlined">account_balance</i>Earning</a>
+              <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">cloud_download</i>Downloads</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+            class="material-icons-outlined">power_settings_new</i>Logout</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+  <!--end top header-->
+
+
+   <!--start sidebar-->
+   <aside class="sidebar-wrapper" data-simplebar="true">
+    <div class="sidebar-header">
+      <div class="logo-icon">
+        <img src="/static/assets/images/logo-icon.png" class="logo-img" alt="">
+      </div>
+      <div class="logo-name flex-grow-1">
+        <h5 class="mb-0">Maxton</h5>
+      </div>
+      <div class="sidebar-close">
+        <span class="material-icons-outlined">close</span>
+      </div>
+    </div>
+    <div class="sidebar-nav">
+        <!--navigation-->
+        <ul class="metismenu" id="sidenav">
+          <li>
+            <a href="/test">
+              <div class="parent-icon"><i class="material-icons-outlined">home</i>
+              </div>
+              <div class="menu-title">Dashboard</div>
+            </a>
+          </li>
+        <!--end navigation-->
+    </div>
+  </aside>
+<!--end sidebar-->
+
+  <!--start main wrapper-->
+  <main class="main-wrapper">
+    <div class="main-content">
+      <!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">Dashboard</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+								</li>
+								<li class="breadcrumb-item active" aria-current="page">Analysis</li>
+							</ol>
+						</nav>
+					</div>
+					<div class="ms-auto">
+					</div>
+				</div>
+				<!--end breadcrumb-->
+     
+        <div class="row">
+          <div class="col-xxl-8 d-flex align-items-stretch">
+            <div class="card w-100 overflow-hidden rounded-4">
+              <div class="card-body position-relative p-4">
+                <div class="row">
+                  <div class="col-12 col-sm-7">
+                    <div class="d-flex align-items-center gap-3 mb-5">
+                      <img src="/static/assets/images/avatars/01.png" class="rounded-circle bg-grd-info p-1"  width="60" height="60" alt="user">
+                      <div class="">
+                        <p class="mb-0 fw-semibold">Welcome back</p>
+                        <h4 class="fw-semibold mb-0 fs-4 mb-0">{{username}}!</h4>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-5">
+                      <div class="">
+                        <h4 class="mb-1 fw-semibold d-flex align-content-center">$65.4K<i class="ti ti-arrow-up-right fs-5 lh-base text-success"></i>
+                        </h4>
+                        <p class="mb-3">Today's Sales</p>
+                        <div class="progress mb-0" style="height:5px;">
+                          <div class="progress-bar bg-grd-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="vr"></div>
+                      <div class="">
+                        <h4 class="mb-1 fw-semibold d-flex align-content-center">78.4%<i class="ti ti-arrow-up-right fs-5 lh-base text-success"></i>
+                        </h4>
+                        <p class="mb-3">Growth Rate</p>
+                        <div class="progress mb-0" style="height:5px;">
+                          <div class="progress-bar bg-grd-danger" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-5">
+                    <div class="welcome-back-img pt-4">
+                       <img src="/static/assets/images/gallery/welcome-back-3.png" height="180" alt="">
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
+            <div class="card w-100 rounded-4">
+              <div class="card-body">
+                <div class="text-center">
+                  <h6 class="mb-0">Monthly Revenue</h6>
+                </div>
+                <div class="mt-4" id="chart5"></div>
+                <p>Avrage monthly sale for every author</p>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                  <div class="">
+                    <h1 class="mb-0 text-primary">68.9%</h1>
+                  </div>
+                  <div class="d-flex align-items-center align-self-end">
+                    <p class="mb-0 text-success">34.5%</p>
+                    <span class="material-icons-outlined text-success">expand_less</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
+            <div class="card w-100 rounded-4">
+              <div class="card-body">
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-start justify-content-between">
+                    <div class="">
+                      <h5 class="mb-0">Device Type</h5>
+                    </div>
+                    <div class="dropdown">
+                      <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        <span class="material-icons-outlined fs-5">more_vert</span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+                        <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <div class="piechart-legend">
+                      <h2 class="mb-1">68%</h2>
+                      <h6 class="mb-0">Total Views</h6>
+                    </div>
+                    <div id="chart6"></div>
+                  </div>
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
+                          class="material-icons-outlined fs-6 text-primary">desktop_windows</span>Desktop</p>
+                      <div class="">
+                        <p class="mb-0">35%</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
+                          class="material-icons-outlined fs-6 text-danger">tablet_mac</span>Tablet</p>
+                      <div class="">
+                        <p class="mb-0">48%</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
+                          class="material-icons-outlined fs-6 text-success">phone_android</span>Mobile</p>
+                      <div class="">
+                        <p class="mb-0">27%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </main>
+  <!--end main wrapper-->
+
+  <!--start overlay-->
+     <div class="overlay btn-toggle"></div>
+  <!--end overlay-->
+
+   <!--start footer-->
+   <footer class="page-footer">
+    <p class="mb-0">Copyright © 2024. All right reserved.</p>
+  </footer>
+  <!--end footer-->
+
+
+  <!--start switcher-->
+  <button class="btn btn-grd btn-grd-primary position-fixed bottom-0 end-0 m-3 d-flex align-items-center gap-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+    <i class="material-icons-outlined">tune</i>Customize
+  </button>
+  
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="staticBackdrop">
+    <div class="offcanvas-header border-bottom h-70">
+      <div class="">
+        <h5 class="mb-0">Theme Customizer</h5>
+        <p class="mb-0">Customize your theme</p>
+      </div>
+      <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="offcanvas">
+        <i class="material-icons-outlined">close</i>
+      </a>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <p>Theme variation</p>
+
+        <div class="row g-3">
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="BlueTheme" checked>
+            <label class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4" for="BlueTheme">
+              <span class="material-icons-outlined">contactless</span>
+              <span>Blue</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="LightTheme">
+            <label class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4" for="LightTheme">
+              <span class="material-icons-outlined">light_mode</span>
+              <span>Light</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="DarkTheme">
+            <label class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4" for="DarkTheme">
+              <span class="material-icons-outlined">dark_mode</span>
+              <span>Dark</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="SemiDarkTheme">
+            <label class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4" for="SemiDarkTheme">
+              <span class="material-icons-outlined">contrast</span>
+              <span>Semi Dark</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="BoderedTheme">
+            <label class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4" for="BoderedTheme">
+              <span class="material-icons-outlined">border_style</span>
+              <span>Bordered</span>
+            </label>
+          </div>
+        </div><!--end row-->
+
+      </div>
+    </div>
+  </div>
+  <!--start switcher-->
+
+  <!--bootstrap js-->
+  <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+
+  <!--plugins-->
+  <script src="/static/assets/js/jquery.min.js"></script>
+  <!--plugins-->
+  <script src="/static/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="/static/assets/plugins/metismenu/metisMenu.min.js"></script>
+  <script src="/static/assets/plugins/apexchart/apexcharts.min.js"></script>
+  <script src="/static/assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <script src="/static/assets/plugins/peity/jquery.peity.min.js"></script>
+  <script>
+    $(".data-attributes span").peity("donut")
+  </script>
+  <script src="/static/assets/js/main.js"></script>
+  <script src="/static/assets/js/dashboard1.js"></script>
+  <script>
+	   new PerfectScrollbar(".user-list")
+  </script>
+
+</body>
+
+</html>
